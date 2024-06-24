@@ -12,7 +12,9 @@ import PsiraGrades from "./components/PsiraGrade";
 import FirearmTraining from "./components/FirearmTraining";
 import ComboTraining from "./components/ComboTraining";
 import SassetTraining from "./components/SassetaTraining";
+
 type Inputs = z.infer<typeof trainingApplicationSchema>;
+
 const TrainingApplication = () => {
   const {
     register,
@@ -555,13 +557,27 @@ const TrainingApplication = () => {
     <>
       <Breadcrumb title="Training Application" bgImage="/herobg.png" />
 
-      <div>
-        <form onSubmit={handleSubmit(onSubmit)}>
+      <div className="max-container padding-container">
+
+          <div className="bold-20 pb-5 lg:bold-32 text-center mt-5 text-blue-100 capitalize">
+            <h2>Application Form</h2>
+            <p className="regular-16 mt-5 bg-white/80 text-red-50 lg:mt-[30px] lg:bg-none">*Please complete all sections of this application form in full (Incomplete applications will not be processed)</p>
+          </div>
+        <form onSubmit={handleSubmit(onSubmit)} className="border p-10 rounded-lg shadow-lg">
+
+
+
+          <hr className="pb-5"/>
+
           <div className="grid container gap-10 grid-cols-2 gap-y-2 mx-auto text-left">
+
+
             <div className="form-control">
+             
               <label className="mb-2 block text-sm font-medium" htmlFor="title">
                 Title
               </label>
+              
               <select id="title" {...register("title")}>
                 <option value="Mr">Mr</option>
                 <option value="Mrs">Mrs</option>
