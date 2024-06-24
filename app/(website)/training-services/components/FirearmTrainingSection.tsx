@@ -45,7 +45,7 @@ const FirearmTrainingSection = () => {
             </div>
           </div>
             <dl className="mt-10 max-w-xl space-y-5 text-base leading-7 text-gray-600 lg:max-w-none">
-            <h2 className="text-base font-semibold leading-7 text-red-50">People credited with any of these units standard are capable of:...</h2>
+            <h2 className="text-base font-semibold leading-7 text-red-50">People credited with any of these units standard are capable of:</h2>
                 {features.map((feature) => (
                   <div key={feature.name} className="relative pl-9">
                     <dt className="inline font-semibold text-gray-900">

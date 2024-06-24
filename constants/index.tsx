@@ -5,11 +5,13 @@ export const NAV_LINKS = [
     { href: '/training-services', key: 'training-services', label: 'Training Services' },
     { href: '/training-application', key: 'training-application', label: 'Training Application ' },
     { href: '/training-enquiries', key: 'training-enquiries', label: 'Training Enquiries' },
+    { href: '/about-us', key: 'about-us', label: 'About Us' },
+
   ];
 
 
   export const SUB_NAV_LINKS = [
-    { href: '/about-us', key: 'about-us', label: 'About Us' },
+    // { href: '/about-us', key: 'about-us', label: 'About Us' },
     { href: '/help-desk', key: 'help-desk', label: 'Help Desk' },
    
   ];
@@ -80,7 +82,7 @@ export const FOOTER_LINKS = [
       { label: 'Limpopo Office', value: 'Mashau - Thondoni, Plot Number 1135, 0943' },
       { label: 'Email Officer', value: 'info@muposecurity.co.za' },
       { label: 'Gauteng Office #', value: '+27 12004 2004' },
-      { label: 'Limpopo Office #', value: '+27 84 750 7013' },
+      { label: 'Limpopo Office #', value: ' +27 15 004 1587' },
     ],
   };
   

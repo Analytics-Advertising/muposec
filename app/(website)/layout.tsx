@@ -22,7 +22,7 @@ export default function RootLayout({
           <main className="relative overflow-hidden">
             {children}  
           </main>
-          <CTASection/>
+          {/* <CTASection/> */}
         <Footer/>
         </body>
     </html>

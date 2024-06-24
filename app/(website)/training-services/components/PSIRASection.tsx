@@ -68,7 +68,7 @@ const PSIRASection = () => {
                 </div>
 
                 <div className="lg:pr-8 lg:pt-20">
-            <h2 className="text-base font-semibold leading-7 text-red-50">People credited with any of these units standard are capable of:...</h2>
+            <h2 className="text-base font-semibold leading-7 text-red-50">People credited with any of these units standard are capable of:</h2>
 
             <dl className="mt-10 max-w-xl space-y-5 text-base leading-7 text-gray-600 lg:max-w-none">
                 {GradeFeatures.map((feature) => (
