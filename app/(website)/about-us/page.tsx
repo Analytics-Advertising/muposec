@@ -6,23 +6,23 @@ import MissionData from "./components/MissionData";
 import VisionData from "./components/VisionData";
 import ObjectivesData from "./components/ObjectivesData";
 
-
 const tabs = [
   {
     name: "Vision",
-    content: <VisionData/>
+    content: <VisionData />,
   },
   {
     name: "Mision",
-    content: <MissionData/>,
+    content: <MissionData />,
   },
   {
     name: "Objectives",
-    content: <ObjectivesData/>,
+    content: <ObjectivesData />,
   },
   {
     name: "Our Philosophy",
-    content: "At Mupo Security, safety always comes first. Our systematic approach to establishing and maintaining the highest standards of safety and security means you can focus on getting the job done without risk to your people, products, or property.",
+    content:
+      "At Mupo Security, safety always comes first. Our systematic approach to establishing and maintaining the highest standards of safety and security means you can focus on getting the job done without risk to your people, products, or property.",
   },
 ];
 
@@ -85,24 +85,23 @@ export const features3 = [
   },
 ];
 
-
 export const features4 = [
-    ,
-    {
-      name: "Corporate clients: We provide security services and training to large corporations, small businesses, and start-ups.",
-      icon: CheckBadgeIcon,
-    },
-    ,
-    {
-      name: "Government agencies: We have worked with various government agencies to provide security services and training.",
-      icon: CheckBadgeIcon,
-    },
-    ,
-    {
-      name: "Individuals: We offer personalized security services to individuals who require executive protection, event security, or personal security.",
-      icon: CheckBadgeIcon,
-    },
-  ];
+  ,
+  {
+    name: "Corporate clients: We provide security services and training to large corporations, small businesses, and start-ups.",
+    icon: CheckBadgeIcon,
+  },
+  ,
+  {
+    name: "Government agencies: We have worked with various government agencies to provide security services and training.",
+    icon: CheckBadgeIcon,
+  },
+  ,
+  {
+    name: "Individuals: We offer personalized security services to individuals who require executive protection, event security, or personal security.",
+    icon: CheckBadgeIcon,
+  },
+];
 const AboutUs = () => {
   return (
     <>
@@ -250,9 +249,8 @@ const AboutUs = () => {
             />
           </div>
         </div>
-
       </div>
-        <hr/>
+      <hr />
     </>
   );
 };

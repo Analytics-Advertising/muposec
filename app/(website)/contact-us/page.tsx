@@ -1,15 +1,14 @@
-import Breadcrumb from "../components/Breadcrumb"
+import Breadcrumb from "../components/Breadcrumb";
 import CTASection from "../components/CTA";
 
 const ContactUS = () => {
-    return (
-      <>
+  return (
+    <>
       <Breadcrumb title="Contact us" bgImage="/herobg.png" />
-
-      <CTASection/>
-
-      </>
-    )
-}
+      <CTASection />
+      <hr />
+    </>
+  );
+};
 
 export default ContactUS;
