@@ -134,7 +134,7 @@ const AboutUs = () => {
                 ))}
               </dl>
 
-              <dl className="mt-10 max-w-xl space-y-5 text-base leading-7 text-gray-600 lg:max-w-none">
+              {/* <dl className="mt-10 max-w-xl space-y-5 text-base leading-7 text-gray-600 lg:max-w-none">
                 {features2.map((feature) => (
                   <div key={feature.name} className="relative pl-9">
                     <dt className="inline font-semibold text-gray-900">
@@ -146,9 +146,9 @@ const AboutUs = () => {
                     </dt>
                   </div>
                 ))}
-              </dl>
+              </dl> */}
 
-              <dl className="mt-10 max-w-xl space-y-5 text-base leading-7 text-gray-600 lg:max-w-none">
+              {/* <dl className="mt-10 max-w-xl space-y-5 text-base leading-7 text-gray-600 lg:max-w-none">
                 {features3.map((feature) => (
                   <div key={feature.name} className="relative pl-9">
                     <dt className="inline font-semibold text-gray-900">
@@ -160,7 +160,7 @@ const AboutUs = () => {
                     </dt>
                   </div>
                 ))}
-              </dl>
+              </dl> */}
             </div>
             <p className="regular-16 text-gray-30">
               Our people are carefully screened and undergo rigorous training
@@ -181,7 +181,7 @@ const AboutUs = () => {
                 We have extensive experience in providing security services and
                 training to a range of clients, including:
               </p>
-              <dl className="mt-10 max-w-xl space-y-5 text-base leading-7 text-gray-600 lg:max-w-none">
+              {/* <dl className="mt-10 max-w-xl space-y-5 text-base leading-7 text-gray-600 lg:max-w-none">
                 {features4.map((feature) => (
                   <div key={feature.name} className="relative pl-9">
                     <dt className="inline font-semibold text-gray-900">
@@ -193,7 +193,7 @@ const AboutUs = () => {
                     </dt>
                   </div>
                 ))}
-              </dl>
+              </dl> */}
             </div>
           </div>
 
