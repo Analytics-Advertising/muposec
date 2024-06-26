@@ -85,7 +85,7 @@ const Features2 = [
   },
 ];
 
-export const features4 = [
+const features4 = [
   
   {
     name: "Corporate clients: We provide security services and training to large corporations, small businesses, and start-ups.",
