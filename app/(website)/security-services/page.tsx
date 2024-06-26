@@ -242,19 +242,26 @@ const SecurityServices = () => {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <h1 className="bold-40 text-center lg:bold-40 text-blue-100 mb-4">Trusted by</h1>
 
-          <div className="mx-auto mt-10 grid max-w-lg grid-cols-2 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-2 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-            <img
-              className=" max-h-12 w-full object-contain lg:col-span-1"
-              src="/security-services/nbc.jpg"
-              alt="nbc"
-              width={258}
-              height={48}
-            />
+          <div className="mx-auto mt-10 grid max-w-lg grid-cols-3 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-3 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
             <img
               className=" max-h-12 w-full object-contain lg:col-span-1"
               src="/security-services/psira.jpg"
               alt="Reform"
               width={158}
+              height={48}
+            />
+             <img
+              className=" max-h-12 w-full object-contain lg:col-span-1"
+              src="/security-services/sasa-logo.png"
+              alt="sasa-logo"
+              width={258}
+              height={48}
+            />
+            <img
+              className=" max-h-12 w-full object-contain lg:col-span-1"
+              src="/security-services/nbc.jpg"
+              alt="nbc"
+              width={258}
               height={48}
             />
 

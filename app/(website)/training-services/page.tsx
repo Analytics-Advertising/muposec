@@ -35,7 +35,7 @@ const tabs = [
 const TrainingServices = () => {
   return (
     <>
-      <Breadcrumb title="Training Services" bgImage="/herobg.png" />
+      <Breadcrumb title="Training Services" bgImage="/training.jpg" />
 
       <div className="overflow-hidden text-blue-100  bg-white max-container padding-container">
         <p>

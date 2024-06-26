@@ -18,6 +18,7 @@ const HeroSection = () => {
           title="Get in touch!  "
           icon="/icons/phone.svg"
           variant="btn_dark_green"
+          link="/contact-us"
         />
            
           </div>

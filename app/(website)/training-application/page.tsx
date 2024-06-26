@@ -70,7 +70,7 @@ const TrainingApplication = () => {
                 <p> Grade A</p>
               </div>
               <div>
-                <p>R1000</p>
+                <p>R1200</p>
               </div>
             </label>
           </li>
@@ -121,47 +121,28 @@ const TrainingApplication = () => {
                   }}
                   value="Grade E, D, C"
                 />
-                <p> Grade E, D, C (Combined)</p>
+                <p> Grade E, D & C</p>
               </div>
               <div>
-                <p>R1900</p>
+                <p>R2000</p>
               </div>
             </label>
           </li>
           <li>
-            <label className="flex justify-between gap-10">
-              <div className="flex gap-5">
-                <input
-                  type="checkbox"
-                  {...register("selectedOptions.psiraGrades")}
-                  onChange={(e) => {
-                    const isChecked = e.target.checked;
-                    const value = e.target.value;
-                    setValue(
-                      "selectedOptions.psiraGrades",
-                      isChecked
-                        ? [...getValues().selectedOptions.psiraGrades, value]
-                        : getValues().selectedOptions.psiraGrades.filter(
-                            (item: any) => item !== value
-                          )
-                    );
-                  }}
-                  value="Grade E, D, C, B, A"
-                />
-                <p> Grade E, D, C, B, A (Combined)</p>
-              </div>
-              <div>
-                <p>R4000</p>
-              </div>
-            </label>
+          <div className="p-4 mt-5 mb-4 text-sm text-blue-100 rounded-sm bg-red-200  dark:text-red-100" role="alert">
+            <span className="font-medium">Note:</span> Includes PSiRa Profile registration & Course Report
+          </div>
           </li>
         </ul>
       ),
     },
     {
-      name: "Fire-arm Training & Competency",
+      name: "Fire-Arm Training",
       content: (
         <ul>
+           <div className="p-4 mt-5 mb-4 text-sm text-blue-100 rounded-sm bg-red-200  dark:text-red-100" role="alert">
+            <span className="font-medium">Disclaimer:</span> Prerequisite Of Enrolling For Business Fire-Arm Training Is Upon Successfully Completing Private Fire-Arm Training.
+          </div>
           <li>
             <label className="flex justify-between gap-10">
               <div className="flex gap-5">
@@ -183,12 +164,12 @@ const TrainingApplication = () => {
                           )
                     );
                   }}
-                  value="One Fire-Arm - private"
+                  value="One Fire-Arm for Private Purpose (Includes legal)"
                 />
-                <p> One Fire-Arm - private</p>
+                <p> One Fire-Arm for Private Purpose (Includes legal)</p>
               </div>
               <div>
-                <p>R1800</p>
+                <p>R2000</p>
               </div>
             </label>
           </li>
@@ -213,142 +194,26 @@ const TrainingApplication = () => {
                           )
                     );
                   }}
-                  value="Two Fire-Arms - private"
+                  value="One Fire-Arm for Business Purpose (Includes legal)"
                 />
-                <p> Two Fire-Arms - private</p>
-              </div>
-              <div>
-                <p>R3500</p>
-              </div>
-            </label>
-          </li>
-          <li>
-            <label className="flex justify-between gap-10">
-              <div className="flex gap-5">
-                <input
-                  type="checkbox"
-                  {...register("selectedOptions.firearmTraining")}
-                  onChange={(e) => {
-                    const isChecked = e.target.checked;
-                    const value = e.target.value;
-                    setValue(
-                      "selectedOptions.firearmTraining",
-                      isChecked
-                        ? [
-                            ...getValues().selectedOptions.firearmTraining,
-                            value,
-                          ]
-                        : getValues().selectedOptions.firearmTraining.filter(
-                            (item: any) => item !== value
-                          )
-                    );
-                  }}
-                  value="All Three Fire-Arms - private"
-                />
-                <p> All Three Fire-Arms - private</p>
-              </div>
-              <div>
-                <p>R4500</p>
-              </div>
-            </label>
-          </li>
-          <li>
-            <label className="flex justify-between gap-10">
-              <div className="flex gap-5">
-                <input
-                  type="checkbox"
-                  {...register("selectedOptions.firearmTraining")}
-                  onChange={(e) => {
-                    const isChecked = e.target.checked;
-                    const value = e.target.value;
-                    setValue(
-                      "selectedOptions.firearmTraining",
-                      isChecked
-                        ? [
-                            ...getValues().selectedOptions.firearmTraining,
-                            value,
-                          ]
-                        : getValues().selectedOptions.firearmTraining.filter(
-                            (item: any) => item !== value
-                          )
-                    );
-                  }}
-                  value="One Fire-Arm - business"
-                />
-                <p> Two Fire-Arm - business</p>
+                <p> One Fire-Arm for Business Purpose (Includes legal)</p>
               </div>
               <div>
                 <p>R2500</p>
               </div>
             </label>
           </li>
-          <li>
-            <label className="flex justify-between gap-10">
-              <div className="flex gap-5">
-                <input
-                  type="checkbox"
-                  {...register("selectedOptions.firearmTraining")}
-                  onChange={(e) => {
-                    const isChecked = e.target.checked;
-                    const value = e.target.value;
-                    setValue(
-                      "selectedOptions.firearmTraining",
-                      isChecked
-                        ? [
-                            ...getValues().selectedOptions.firearmTraining,
-                            value,
-                          ]
-                        : getValues().selectedOptions.firearmTraining.filter(
-                            (item: any) => item !== value
-                          )
-                    );
-                  }}
-                  value="Two Fire-Arms - business"
-                />
-                <p> Two Fire-Arm - business</p>
-              </div>
-              <div>
-                <p>R4500</p>
-              </div>
-            </label>
-          </li>
-          <li>
-            <label className="flex justify-between gap-10">
-              <div className="flex gap-5">
-                <input
-                  type="checkbox"
-                  {...register("selectedOptions.firearmTraining")}
-                  onChange={(e) => {
-                    const isChecked = e.target.checked;
-                    const value = e.target.value;
-                    setValue(
-                      "selectedOptions.firearmTraining",
-                      isChecked
-                        ? [
-                            ...getValues().selectedOptions.firearmTraining,
-                            value,
-                          ]
-                        : getValues().selectedOptions.firearmTraining.filter(
-                            (item: any) => item !== value
-                          )
-                    );
-                  }}
-                  value="All Three Fire-Arms - business"
-                />
-                <p> All Three Fire-Arms - business</p>
-              </div>
-              <div>
-                <p>R6000</p>
-              </div>
-            </label>
-          </li>
+         
         </ul>
       ),
     },
     {
-      name: "Combo Training",
+      name: "Fire-Arm Training Combo",
       content: (
         <ul>
+          <div className="p-4 mt-5 mb-4 text-sm text-blue-100 rounded-sm bg-red-200  dark:text-red-100" role="alert">
+            <span className="font-medium">Disclaimer:</span> Prerequisite Of Enrolling For Business Fire-Arm Training Is Upon Successfully Completing Private Fire-Arm Training.
+          </div>
           <li>
             <label className="flex justify-between gap-10">
               <div className="flex gap-5">
@@ -367,9 +232,9 @@ const TrainingApplication = () => {
                           )
                     );
                   }}
-                  value="1 Firearm For Private & 1 Firearm For Business"
+                  value="1 Firearm For Private Purpose & 1 Firearm For Business Purpose"
                 />
-                <p> 1 Firearm For Private & 1 Firearm For Business</p>
+                <p> 1 Firearm For Private Purpose & 1 Firearm For Business Purpose</p>
               </div>
               <div>
                 <p>R3500</p>
@@ -428,6 +293,94 @@ const TrainingApplication = () => {
               </div>
             </label>
           </li>
+          <hr className="my-4"/>
+          <li>
+            <label className="flex justify-between gap-10">
+              <div className="flex gap-5">
+                <input
+                  type="checkbox"
+                  {...register("selectedOptions.comboTraining")}
+                  onChange={(e) => {
+                    const isChecked = e.target.checked;
+                    const value = e.target.value;
+                    setValue(
+                      "selectedOptions.comboTraining",
+                      isChecked
+                        ? [...getValues().selectedOptions.comboTraining, value]
+                        : getValues().selectedOptions.comboTraining.filter(
+                            (item: any) => item !== value
+                          )
+                    );
+                  }}
+                  value="All 3 Firearms For Private Purpose"
+                />
+                <p>  All 3 Firearms For Private Purpose</p>
+              </div>
+              <div>
+                <p>R4500</p>
+              </div>
+            </label>
+          </li>
+          <li>
+            <label className="flex justify-between gap-10">
+              <div className="flex gap-5">
+                <input
+                  type="checkbox"
+                  {...register("selectedOptions.comboTraining")}
+                  onChange={(e) => {
+                    const isChecked = e.target.checked;
+                    const value = e.target.value;
+                    setValue(
+                      "selectedOptions.comboTraining",
+                      isChecked
+                        ? [...getValues().selectedOptions.comboTraining, value]
+                        : getValues().selectedOptions.comboTraining.filter(
+                            (item: any) => item !== value
+                          )
+                    );
+                  }}
+                  value="All 3 Firearms For Business Purpose"
+                />
+                <p>All 3 Firearms For Business Purpose</p>
+              </div>
+              <div>
+                <p>R6000</p>
+              </div>
+            </label>
+          </li>
+
+          <li>
+            <label className="flex justify-between gap-10">
+              <div className="flex gap-5">
+                <input
+                  type="checkbox"
+                  {...register("selectedOptions.comboTraining")}
+                  onChange={(e) => {
+                    const isChecked = e.target.checked;
+                    const value = e.target.value;
+                    setValue(
+                      "selectedOptions.comboTraining",
+                      isChecked
+                        ? [...getValues().selectedOptions.comboTraining, value]
+                        : getValues().selectedOptions.comboTraining.filter(
+                            (item: any) => item !== value
+                          )
+                    );
+                  }}
+                  value="Combo (All 3 For Private + All 3 For Business)"
+                />
+                <p>Combo (All 3 For Private + All 3 For Business)</p>
+              </div>
+              <div>
+                <p>R9000</p>
+              </div>
+            </label>
+          </li>
+
+          <div className="p-4 mt-5 mb-4 text-sm text-blue-100 rounded-sm  dark:text-red-100" role="alert">
+            <span className="font-medium">Disclaimer:</span> Includes any or all of the following: -   Handgun -   Rifle (SLR) -   Shotgun
+          </div>
+
         </ul>
       ),
     },
@@ -555,7 +508,7 @@ const TrainingApplication = () => {
 
   return (
     <>
-      <Breadcrumb title="Training Application" bgImage="/herobg.png" />
+      <Breadcrumb title="Training Application" bgImage="/security-services/trainingapp.jpg" />
 
       <div className="max-container padding-container">
 

@@ -4,7 +4,7 @@ import CTASection from "../components/CTA";
 const ContactUS = () => {
   return (
     <>
-      <Breadcrumb title="Contact us" bgImage="/herobg.png" />
+      <Breadcrumb title="Contact us" bgImage="/getintouch.jpg" />
       <CTASection />
       <hr />
     </>

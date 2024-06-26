@@ -1,18 +1,18 @@
 // NAVIGATION
 export const NAV_LINKS = [
     { href: '/', key: 'home', label: 'Home' },
+    { href: '/about-us', key: 'about-us', label: 'About Us' },
     { href: '/security-services', key: 'security-services', label: 'Security Services' },
     { href: '/training-services', key: 'training-services', label: 'Training Services' },
     { href: '/training-application', key: 'training-application', label: 'Training Application ' },
     // { href: '/training-enquiries', key: 'training-enquiries', label: 'Training Enquiries' },
-    { href: '/about-us', key: 'about-us', label: 'About Us' },
 
   ];
 
 
   export const SUB_NAV_LINKS = [
     // { href: '/about-us', key: 'about-us', label: 'About Us' },
-    { href: '/help-desk', key: 'help-desk', label: 'Help Desk' },
+    { href: '/admin', key: 'admin', label: 'Admin' },
    
   ];
 
