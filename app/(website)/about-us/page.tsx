@@ -26,7 +26,7 @@ const tabs = [
   },
 ];
 
-export const features = [
+const FeaturesOne = [
   {
     name: "Retail & Industrial",
     icon: CheckBadgeIcon,
@@ -45,7 +45,7 @@ export const features = [
   },
 ];
 
-export const features2 = [
+const Features2 = [
   {
     name: "Guarding and Patrol",
     icon: CheckBadgeIcon,
@@ -67,7 +67,7 @@ export const features2 = [
     icon: CheckBadgeIcon,
   },
 ];
-export const features3 = [
+ const Features3 = [
   ,
   {
     name: "Surveillance",
@@ -86,7 +86,7 @@ export const features3 = [
 ];
 
 export const features4 = [
-  ,
+  
   {
     name: "Corporate clients: We provide security services and training to large corporations, small businesses, and start-ups.",
     icon: CheckBadgeIcon,
@@ -121,7 +121,7 @@ const AboutUs = () => {
 
             <div className="grid grid-cols-3 pb-5">
               <dl className="mt-10 max-w-xl space-y-5 text-base leading-7 text-gray-600 lg:max-w-none">
-                {features.map((feature) => (
+                {FeaturesOne.map((feature) => (
                   <div key={feature.name} className="relative pl-9">
                     <dt className="inline font-semibold text-gray-900">
                       <feature.icon
