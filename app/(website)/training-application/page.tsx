@@ -5,13 +5,9 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { trainingApplicationSchema } from "@/lib/schema";
-import type { TabsProps } from "antd";
 import Button from "../components/Button";
 import Tabs from "./components/Tabs";
-import PsiraGrades from "./components/PsiraGrade";
-import FirearmTraining from "./components/FirearmTraining";
-import ComboTraining from "./components/ComboTraining";
-import SassetTraining from "./components/SassetaTraining";
+
 
 type Inputs = z.infer<typeof trainingApplicationSchema>;
 
@@ -48,8 +44,8 @@ const TrainingApplication = () => {
       content: (
         <ul>
           <li>
-            <label className="flex justify-between gap-10">
-              <div className="flex gap-5">
+            <label className="flex flex-col sm:flex-row justify-between gap-4 sm:gap-10">
+              <div className="flex gap-2 sm:gap-5">
                 <input
                   type="checkbox"
                   {...register("selectedOptions.psiraGrades")}
@@ -67,7 +63,7 @@ const TrainingApplication = () => {
                   }}
                   value="Grade A"
                 />
-                <p> Grade A</p>
+                <p>Grade A</p>
               </div>
               <div>
                 <p>R1200</p>
@@ -75,8 +71,8 @@ const TrainingApplication = () => {
             </label>
           </li>
           <li>
-            <label className="flex justify-between gap-10">
-              <div className="flex gap-5">
+            <label className="flex flex-col sm:flex-row justify-between gap-4 sm:gap-10">
+              <div className="flex gap-2 sm:gap-5">
                 <input
                   type="checkbox"
                   {...register("selectedOptions.psiraGrades")}
@@ -94,7 +90,7 @@ const TrainingApplication = () => {
                   }}
                   value="Grade B"
                 />
-                <p> Grade B</p>
+                <p>Grade B</p>
               </div>
               <div>
                 <p>R1000</p>
@@ -102,8 +98,8 @@ const TrainingApplication = () => {
             </label>
           </li>
           <li>
-            <label className="flex justify-between gap-10">
-              <div className="flex gap-5">
+            <label className="flex flex-col sm:flex-row justify-between gap-4 sm:gap-10">
+              <div className="flex gap-2 sm:gap-5">
                 <input
                   type="checkbox"
                   {...register("selectedOptions.psiraGrades")}
@@ -121,7 +117,7 @@ const TrainingApplication = () => {
                   }}
                   value="Grade E, D, C"
                 />
-                <p> Grade E, D & C</p>
+                <p>Grade E, D & C</p>
               </div>
               <div>
                 <p>R2000</p>
@@ -129,19 +125,29 @@ const TrainingApplication = () => {
             </label>
           </li>
           <li>
-          <div className="p-4 mt-5 mb-4 text-sm text-blue-100 rounded-sm bg-red-200  dark:text-red-100" role="alert">
-            <span className="font-medium">Note:</span> Includes PSiRa Profile registration & Course Report
-          </div>
+            <div
+              className="p-4 mt-5 mb-4 text-sm text-blue-100 rounded-sm bg-red-200 dark:text-red-100"
+              role="alert"
+            >
+              <span className="font-medium">Note:</span> Includes PSiRa Profile
+              registration & Course Report
+            </div>
           </li>
         </ul>
       ),
     },
+    
     {
       name: "Fire-Arm Training",
       content: (
         <ul>
-           <div className="p-4 mt-5 mb-4 text-sm text-blue-100 rounded-sm bg-red-200  dark:text-red-100" role="alert">
-            <span className="font-medium">Disclaimer:</span> Prerequisite Of Enrolling For Business Fire-Arm Training Is Upon Successfully Completing Private Fire-Arm Training.
+          <div
+            className="p-4 mt-5 mb-4 text-sm text-blue-100 rounded-sm bg-red-200  dark:text-red-100"
+            role="alert"
+          >
+            <span className="font-medium">Disclaimer:</span> Prerequisite Of
+            Enrolling For Business Fire-Arm Training Is Upon Successfully
+            Completing Private Fire-Arm Training.
           </div>
           <li>
             <label className="flex justify-between gap-10">
@@ -203,7 +209,6 @@ const TrainingApplication = () => {
               </div>
             </label>
           </li>
-         
         </ul>
       ),
     },
@@ -211,8 +216,13 @@ const TrainingApplication = () => {
       name: "Fire-Arm Training Combo",
       content: (
         <ul>
-          <div className="p-4 mt-5 mb-4 text-sm text-blue-100 rounded-sm bg-red-200  dark:text-red-100" role="alert">
-            <span className="font-medium">Disclaimer:</span> Prerequisite Of Enrolling For Business Fire-Arm Training Is Upon Successfully Completing Private Fire-Arm Training.
+          <div
+            className="p-4 mt-5 mb-4 text-sm text-blue-100 rounded-sm bg-red-200  dark:text-red-100"
+            role="alert"
+          >
+            <span className="font-medium">Disclaimer:</span> Prerequisite Of
+            Enrolling For Business Fire-Arm Training Is Upon Successfully
+            Completing Private Fire-Arm Training.
           </div>
           <li>
             <label className="flex justify-between gap-10">
@@ -234,7 +244,10 @@ const TrainingApplication = () => {
                   }}
                   value="1 Firearm For Private Purpose & 1 Firearm For Business Purpose"
                 />
-                <p> 1 Firearm For Private Purpose & 1 Firearm For Business Purpose</p>
+                <p>
+                  {" "}
+                  1 Firearm For Private Purpose & 1 Firearm For Business Purpose
+                </p>
               </div>
               <div>
                 <p>R3500</p>
@@ -293,7 +306,7 @@ const TrainingApplication = () => {
               </div>
             </label>
           </li>
-          <hr className="my-4"/>
+          <hr className="my-4" />
           <li>
             <label className="flex justify-between gap-10">
               <div className="flex gap-5">
@@ -314,7 +327,7 @@ const TrainingApplication = () => {
                   }}
                   value="All 3 Firearms For Private Purpose"
                 />
-                <p>  All 3 Firearms For Private Purpose</p>
+                <p> All 3 Firearms For Private Purpose</p>
               </div>
               <div>
                 <p>R4500</p>
@@ -377,10 +390,13 @@ const TrainingApplication = () => {
             </label>
           </li>
 
-          <div className="p-4 mt-5 mb-4 text-sm text-blue-100 rounded-sm  dark:text-red-100" role="alert">
-            <span className="font-medium">Disclaimer:</span> Includes any or all of the following: -   Handgun -   Rifle (SLR) -   Shotgun
+          <div
+            className="p-4 mt-5 mb-4 text-sm text-blue-100 rounded-sm  dark:text-red-100"
+            role="alert"
+          >
+            <span className="font-medium">Disclaimer:</span> Includes any or all
+            of the following: - Handgun - Rifle (SLR) - Shotgun
           </div>
-
         </ul>
       ),
     },
@@ -408,7 +424,11 @@ const TrainingApplication = () => {
                   }}
                   value="National Certificate: General Security Practices NQF Level 2 ID(58577)"
                 />
-                <p> National Certificate: General Security Practices NQF Level 2 ID(58577)</p>
+                <p>
+                  {" "}
+                  National Certificate: General Security Practices NQF Level 2
+                  ID(58577)
+                </p>
               </div>
               <div>
                 <p>R10000</p>
@@ -499,8 +519,6 @@ const TrainingApplication = () => {
     },
   ];
 
-
-
   const onSubmit = async (values: Inputs) => {
     console.log(values);
     reset();
@@ -508,137 +526,127 @@ const TrainingApplication = () => {
 
   return (
     <>
-      <Breadcrumb title="Training Application" bgImage="/security-services/trainingapp.jpg" />
+      <Breadcrumb
+        title="Training Application"
+        bgImage="/security-services/trainingapp.jpg"
+      />
 
       <div className="max-container padding-container">
+        <p className="regular-16 bg-white/80 text-red-50 lg:mt-[8px] mb-5 lg:bg-none">
+          *Please complete all sections of this application form in full
+          (Incomplete applications will not be processed)
+        </p>
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className="border p-10 rounded-lg shadow-lg"
+        >
+          <hr className="pb-5" />
 
-          <div className="bold-20 pb-5 lg:bold-32 text-center mt-5 text-blue-100 capitalize">
-            <h2>Application Form</h2>
-            <p className="regular-16 mt-5 bg-white/80 text-red-50 lg:mt-[30px] lg:bg-none">*Please complete all sections of this application form in full (Incomplete applications will not be processed)</p>
-          </div>
-        <form onSubmit={handleSubmit(onSubmit)} className="border p-10 rounded-lg shadow-lg">
+          <div className="grid container gap-10 sm:grid-cols-1 md:grid-cols-2 gap-y-2 mx-auto text-left">
+  <div className="form-control">
+    <label className="mb-2 block text-sm font-medium" htmlFor="title">
+      Title
+    </label>
+    <select id="title" {...register("title")}>
+      <option value="Mr">Mr</option>
+      <option value="Mrs">Mrs</option>
+      <option value="Miss">Miss</option>
+      <option value="Ms">Ms</option>
+    </select>
+    {errors.title && (
+      <p className="error" aria-live="polite">
+        {errors.title.message}
+      </p>
+    )}
+  </div>
 
+  <div className="form-control">
+    <label className="mb-2 block text-sm font-medium" htmlFor="firstName">
+      First Name
+    </label>
+    <input
+      id="firstName"
+      type="text"
+      {...register("firstName")}
+      placeholder="Enter first name"
+    />
+    {errors.firstName && (
+      <p className="error" aria-live="polite">
+        {errors.firstName.message}
+      </p>
+    )}
+  </div>
 
+  <div className="form-control">
+    <label className="mb-2 block text-sm font-medium" htmlFor="lastName">
+      Last Name
+    </label>
+    <input
+      id="lastName"
+      type="text"
+      {...register("lastName")}
+      placeholder="Enter last name"
+    />
+    {errors.lastName && (
+      <p className="error" aria-live="polite">
+        {errors.lastName.message}
+      </p>
+    )}
+  </div>
 
-          <hr className="pb-5"/>
+  <div className="form-control">
+    <label className="mb-2 block text-sm font-medium" htmlFor="IDPassport">
+      ID/Passport
+    </label>
+    <input
+      id="IDPassport"
+      type="text"
+      {...register("IDPassport")}
+      placeholder="Enter Passport or ID number"
+    />
+    {errors.IDPassport && (
+      <p className="error" aria-live="polite">
+        {errors.IDPassport.message}
+      </p>
+    )}
+  </div>
 
-          <div className="grid container gap-10 grid-cols-2 gap-y-2 mx-auto text-left">
+  <div className="form-control">
+    <label className="mb-2 block text-sm font-medium" htmlFor="phone">
+      Phone Number
+    </label>
+    <input
+      id="phone"
+      type="text"
+      {...register("phone")}
+      placeholder="Phone number"
+    />
+    {errors.phone && (
+      <p className="error" aria-live="polite">
+        {errors.phone.message}
+      </p>
+    )}
+  </div>
 
+  <div className="form-control">
+    <label className="mb-2 block text-sm font-medium" htmlFor="email">
+      Email
+    </label>
+    <input
+      id="email"
+      type="email"
+      {...register("email")}
+      placeholder="Enter email"
+    />
+    {errors.email && (
+      <p className="error" aria-live="polite">
+        {errors.email.message}
+      </p>
+    )}
+  </div>
+</div>
 
-            <div className="form-control">
-             
-              <label className="mb-2 block text-sm font-medium" htmlFor="title">
-                Title
-              </label>
-              
-              <select id="title" {...register("title")}>
-                <option value="Mr">Mr</option>
-                <option value="Mrs">Mrs</option>
-                <option value="Miss">Miss</option>
-                <option value="Ms">Ms</option>
-              </select>
-              {errors.title && (
-                <p className="error" aria-live="polite">
-                  {errors.title.message}
-                </p>
-              )}
-            </div>
-
-            <div className="form-control">
-              <label
-                className="mb-2 block text-sm font-medium"
-                htmlFor="firstName"
-              >
-                First Name
-              </label>
-              <input
-                id="firstName"
-                type="text"
-                {...register("firstName")}
-                placeholder="Enter first name"
-              />
-              {errors.firstName && (
-                <p className="error" aria-live="polite">
-                  {errors.firstName.message}
-                </p>
-              )}
-            </div>
-
-            <div className="form-control">
-              <label
-                className="mb-2 block text-sm font-medium"
-                htmlFor="lastName"
-              >
-                Last Name
-              </label>
-              <input
-                id="lastName"
-                type="text"
-                {...register("lastName")}
-                placeholder="Enter last name"
-              />
-              {errors.lastName && (
-                <p className="error" aria-live="polite">
-                  {errors.lastName.message}
-                </p>
-              )}
-            </div>
-
-            <div className="form-control">
-              <label
-                className="mb-2 block text-sm font-medium"
-                htmlFor="IDPassport"
-              >
-                ID/Passport
-              </label>
-              <input
-                id="IDPassport"
-                type="text"
-                {...register("IDPassport")}
-                placeholder="Enter Passport or ID number"
-              />
-              {errors.IDPassport && (
-                <p className="error" aria-live="polite">
-                  {errors.IDPassport.message}
-                </p>
-              )}
-            </div>
-
-            <div className="form-control">
-              <label className="mb-2 block text-sm font-medium" htmlFor="phone">
-                Phone Number
-              </label>
-              <input
-                id="phone"
-                type="text"
-                {...register("phone")}
-                placeholder="Phone number"
-              />
-              {errors.phone && (
-                <p className="error" aria-live="polite">
-                  {errors.phone.message}
-                </p>
-              )}
-            </div>
-
-            <div className="form-control">
-              <label className="mb-2 block text-sm font-medium" htmlFor="email">
-                Email
-              </label>
-              <input
-                id="email"
-                type="email"
-                {...register("email")}
-                placeholder="Enter email"
-              />
-              {errors.email && (
-                <p className="error" aria-live="polite">
-                  {errors.email.message}
-                </p>
-              )}
-            </div>
-          </div>
-          <div className="px-20">
+          <div >
             <Tabs tabs={tabs} />
             <Button
               type="submit"
