@@ -1,3 +1,5 @@
+"use client"
+import { useState } from 'react';
 import Image from "next/image"
 import Link from "next/link"
 import { NAV_LINKS,SUB_NAV_LINKS } from '@/constants'
@@ -6,9 +8,15 @@ import Button from './Button'
 
 const NavBar = () => {
 
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
   
   
   return (
+    
     <>
 <div className="hidden lg:flex bg-red-50 text-[12px] flex justify-between items-center relative z-30 py-2 px-5">
 
@@ -62,39 +70,49 @@ const NavBar = () => {
     <nav className="flexBetween max-container padding-container relative z-30 py-2">
         <Link href="/">
             <Image src="/black-logo.png" alt="logo" width={100} height={29} />
-      </Link>
-
-      <ul className='hidden h-full gap-12 lg:flex'>
-        {NAV_LINKS.map(( link ) =>
-        <Link href={link.href}  key={link.key} className=" text-blue-100 flexCenter cursor-pointer pb-1.5 transition-all hover:font-semibold hover:text-red-50">
-           {link.label}
         </Link>
-        )}
-      </ul>
 
-      <div className='lg:fl'>
+        <div className="lg:hidden">
+          <Image
+            src="/icons/menu.svg"
+            alt="menu"
+            width={32}
+            height={32}
+            className="inline-block cursor-pointer"
+            onClick={toggleMenu}
+          />
+        </div>
 
-      <div className="lg:flexCenter hidden">
-        <Button 
-          type="button"
-          title="Get in touch!"
-          icon="/icons/phone.svg"
-          variant="btn_dark_green"
-          link="/contact-us"
-        />
-      </div>
+        <ul className={`lg:hidden absolute top-[90px] right-0 bg-white w-full py-4 px-6 shadow-md transition-transform duration-300 transform ${menuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+          {NAV_LINKS.map((link) => (
+            <li key={link.key} className="mb-4">
+              <Link href={link.href}  className="text-blue-100 text-lg font-medium hover:text-red-500" onClick={toggleMenu}>
+                  {link.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
 
-      <Image 
-        src="/icons/menu.svg"
-        alt="menu"
-        width={32}
-        height={32}
-        className="inline-block cursor-pointer lg:hidden"
-      />
+        <ul className="hidden lg:flex gap-12">
+          {NAV_LINKS.map((link) => (
+            <li key={link.key}>
+              <Link href={link.href} className="text-blue-100 hover:font-semibold hover:text-red-500">
+                  {link.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
 
-      </div>
-      
-    </nav>
+        <div className="lg:flex hidden ml-auto">
+          <Button
+            type="button"
+            title="Get in touch!"
+            icon="/icons/phone.svg"
+            variant="btn_dark_green"
+            link="/contact-us"
+          />
+        </div>
+      </nav>
     </>
   )
 }
