@@ -218,67 +218,6 @@ const SecurityServices = () => {
         </div>
       </div>
 
-      {/* Electronic Security */}
-      <div className="hidden overflow-hidden bg-white pb-24  max-container">
-        <div className="border bg-gray-20" />
-
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-            <div className="lg:pr-8 lg:pt-4">
-              <div className="lg:max-w-lg">
-                <h2 className="text-base font-semibold leading-7 text-red-50">
-                  05.
-                </h2>
-                <h1 className="bold-40 lg:bold-40 text-blue-100 mb-4">
-                  Security Consultancy and Risk Management
-                </h1>
-
-                <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
-                  {SecurityConsultancyFeatures.map((feature) => (
-                    <div key={feature.name} className="relative pl-9">
-                      <dt className="inline font-semibold text-gray-900">
-                        <feature.icon
-                          className="absolute left-1 top-1 h-5 w-5 text-red-50"
-                          aria-hidden="true"
-                        />
-                        <span className="text-blue-100">{feature.name}</span>
-                      </dt>{" "}
-                      <dd className="inline">{feature.description}</dd>
-                    </div>
-                  ))}
-                </dl>
-              </div>
-            </div>
-
-            <div className="lg:pr-8 lg:pt-4">
-              <div className="lg:max-w-lg">
-                <h2 className="text-base font-semibold leading-7 text-red-50">
-                  06.
-                </h2>
-                <h1 className="bold-40 lg:bold-40 text-blue-100 mb-4">
-                  Incident Response and Crisis Management
-                </h1>
-
-                <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
-                  {IncidentResponseFeatures.map((feature) => (
-                    <div key={feature.name} className="relative pl-9">
-                      <dt className="inline font-semibold text-gray-900">
-                        <feature.icon
-                          className="absolute left-1 top-1 h-5 w-5 text-red-50"
-                          aria-hidden="true"
-                        />
-                        <span className="text-blue-100">{feature.name}</span>
-                      </dt>{" "}
-                      <dd className="inline">{feature.description}</dd>
-                    </div>
-                  ))}
-                </dl>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div className="border bg-gray-20"></div>
 
       <div className="bg-white py-8 sm:py-8">
@@ -287,23 +226,23 @@ const SecurityServices = () => {
             Trusted by
           </h1>
 
-          <div className="mx-auto mt-10 grid max-w-lg grid-cols-3 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-3 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+          <div className="mx-auto mt-10 grid max-w-lg grid-cols-1 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-2 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
             <img
-              className=" max-h-12 w-full object-contain lg:col-span-1"
+              className="max-h-12 w-full object-contain"
               src="/security-services/psira.jpg"
               alt="Reform"
               width={158}
               height={48}
             />
             <img
-              className=" max-h-12 w-full object-contain lg:col-span-1"
+              className="max-h-12 w-full object-contain"
               src="/security-services/sasa-logo.png"
               alt="sasa-logo"
               width={258}
               height={48}
             />
             <img
-              className=" max-h-12 w-full object-contain lg:col-span-1"
+              className="max-h-12 w-full object-contain"
               src="/security-services/nbc.jpg"
               alt="nbc"
               width={258}

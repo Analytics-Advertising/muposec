@@ -158,49 +158,50 @@ const AboutUs = () => {
 
             </p>
 
-            <div className="grid grid-cols-3 pb-5">
-              <dl className="mt-10 max-w-xl space-y-5 text-base leading-7 text-gray-600 lg:max-w-none">
-                {FeaturesOne.map((feature) => (
-                  <div key={feature.name} className="relative pl-9">
-                    <dt className="inline font-semibold text-gray-900">
-                      <feature.icon
-                        className="absolute left-1 top-1 h-5 w-5 text-red-50"
-                        aria-hidden="true"
-                      />
-                      <span className="text-blue-100">{feature.name}</span>
-                    </dt>
-                  </div>
-                ))}
-              </dl>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pb-5 gap-5">
+  <dl className="mt-10 max-w-xl space-y-5 text-base leading-7 text-gray-600 lg:max-w-none">
+    {FeaturesOne.map((feature) => (
+      <div key={feature.name} className="relative pl-9">
+        <dt className="inline font-semibold text-gray-900">
+          <feature.icon
+            className="absolute left-1 top-1 h-5 w-5 text-red-50"
+            aria-hidden="true"
+          />
+          <span className="text-blue-100">{feature.name}</span>
+        </dt>
+      </div>
+    ))}
+  </dl>
 
-              <dl className="mt-10 max-w-xl space-y-5 text-base leading-7 text-gray-600 lg:max-w-none">
-                {FeaturesOne2.map((feature) => (
-                  <div key={feature.name} className="relative pl-9">
-                    <dt className="inline font-semibold text-gray-900">
-                      <feature.icon
-                        className="absolute left-1 top-1 h-5 w-5 text-red-50"
-                        aria-hidden="true"
-                      />
-                      <span className="text-blue-100">{feature.name}</span>
-                    </dt>
-                  </div>
-                ))}
-              </dl>
+  <dl className="lg:mt-10 max-w-xl space-y-5 text-base leading-7 text-gray-600 lg:max-w-none">
+    {FeaturesOne2.map((feature) => (
+      <div key={feature.name} className="relative pl-9">
+        <dt className="inline font-semibold text-gray-900">
+          <feature.icon
+            className="absolute left-1 top-1 h-5 w-5 text-red-50"
+            aria-hidden="true"
+          />
+          <span className="text-blue-100">{feature.name}</span>
+        </dt>
+      </div>
+    ))}
+  </dl>
 
-              <dl className="mt-10 max-w-xl space-y-5 text-base leading-7 text-gray-600 lg:max-w-none">
-                {FeaturesOne3.map((feature) => (
-                  <div key={feature.name} className="relative pl-9">
-                    <dt className="inline font-semibold text-gray-900">
-                      <feature.icon
-                        className="absolute left-1 top-1 h-5 w-5 text-red-50"
-                        aria-hidden="true"
-                      />
-                      <span className="text-blue-100">{feature.name}</span>
-                    </dt>
-                  </div>
-                ))}
-              </dl>
-            </div>
+  <dl className="lg:mt-10 max-w-xl space-y-5 text-base leading-7 text-gray-600 lg:max-w-none">
+    {FeaturesOne3.map((feature) => (
+      <div key={feature.name} className="relative pl-9">
+        <dt className="inline font-semibold text-gray-900">
+          <feature.icon
+            className="absolute left-1 top-1 h-5 w-5 text-red-50"
+            aria-hidden="true"
+          />
+          <span className="text-blue-100">{feature.name}</span>
+        </dt>
+      </div>
+    ))}
+  </dl>
+</div>
+
             
            
           </div>
@@ -212,52 +213,51 @@ const AboutUs = () => {
       </div>
 
       <div className="bg-white py-8 sm:py-8">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <h1 className="bold-40 text-center lg:bold-40 text-blue-100 mb-4">
-            Trusted by
-          </h1>
+  <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <h1 className="bold-40 text-center lg:bold-40 text-blue-100 mb-4">
+      Trusted by
+    </h1>
 
-          <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-            <img
-              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-              src="/security-services/nbc.jpg"
-              alt="nbc"
-              width={258}
-              height={48}
-            />
-            <img
-              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-              src="/security-services/psira.jpg"
-              alt="Reform"
-              width={158}
-              height={48}
-            />
+    <div className="mx-auto mt-10 grid max-w-lg grid-cols-2 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-3 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+      <img
+        className="max-h-12 w-full object-contain"
+        src="/security-services/nbc.jpg"
+        alt="nbc"
+        width={258}
+        height={48}
+      />
+      <img
+        className="max-h-12 w-full object-contain"
+        src="/security-services/psira.jpg"
+        alt="Reform"
+        width={158}
+        height={48}
+      />
+      <img
+        className="max-h-12 w-full object-contain"
+        src="/security-services/sapftc.png"
+        alt="sapftc"
+        width={158}
+        height={48}
+      />
+      <img
+        className="max-h-12 w-full object-contain"
+        src="/security-services/QCTO.png"
+        alt="Reform"
+        width={158}
+        height={48}
+      />
+      <img
+        className="col-span-2 max-h-12 w-full object-contain sm:col-span-1"
+        src="/security-services/img_17.png"
+        alt="Reform"
+        width={158}
+        height={48}
+      />
+    </div>
+  </div>
+</div>
 
-            <img
-              className=" col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-              src="/security-services/sapftc.png"
-              alt="sapftc"
-              width={158}
-              height={48}
-            />
-
-            <img
-              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-              src="/security-services/QCTO.png"
-              alt="Reform"
-              width={158}
-              height={48}
-            />
-            <img
-              className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-              src="/security-services/img_17.png"
-              alt="Reform"
-              width={158}
-              height={48}
-            />
-          </div>
-        </div>
-      </div>
       <hr />
     </>
   );
