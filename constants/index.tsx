@@ -1,3 +1,6 @@
+import {  MapPinIcon,EnvelopeIcon, PhoneIcon, CheckCircleIcon,
+  GlobeAltIcon, } from '@heroicons/react/20/solid'
+
 // NAVIGATION
 export const NAV_LINKS = [
     { href: '/', key: 'home', label: 'Home' },
@@ -55,44 +58,51 @@ export const FOOTER_LINKS = [
   {
     title: 'Security Services',
     links: [
-      'Physical Security',
-      'Electronic Security',
-      'Close Protection',
-      'Investigation Services',
-      'Security Consultancy & Risk Management',
-      'Incident Response & Crisis Management',
+      { name:'Physical Security', icon: CheckCircleIcon},
+      { name:'Electronic Security', icon: CheckCircleIcon},
+      { name:'Close Protection', icon: CheckCircleIcon},
+      { name:'Investigation Services', icon: CheckCircleIcon},
+      { name:'Security Consultancy & Risk Management', icon: CheckCircleIcon},
+      { name:'Incident Response & Crisis Management', icon: CheckCircleIcon},
     ],
   },
   {
     title: 'Training Services',
     links: [
-      'Sasseta Accredited Training',
-      'Private Fire Arm & Competency',
-      'Business Fire Arm & Competency',
-      'Fire Arm Training - One on One',
-      'PSIRA Grades'
+      { name:'Sasseta Accredited Training',icon: CheckCircleIcon},
+      { name:'Private Fire Arm & Competency',icon: CheckCircleIcon},
+      { name:'Business Fire Arm & Competency',icon: CheckCircleIcon},
+      { name:'Fire Arm Training - One on One',icon: CheckCircleIcon},
+      { name:'PSIRA Grades',icon: CheckCircleIcon}
     ],
   },
 ];
 
-  export const FOOTER_CONTACT_INFO = {
-    title: 'Contact Us',
-    links: [
-      { label: 'Gauteng Office', value: '377 Johannes Ramakhoase St, Office 0005, Jardown 1' },
-      { label: 'Limpopo Office', value: 'Mashau - Thondoni, Plot Number 1135, 0943' },
-      { label: 'Email Officer', value: 'info@muposecurity.co.za' },
-      { label: 'Gauteng Office #', value: '+27 12004 2004' },
-      { label: 'Limpopo Office #', value: ' +27 15 004 1587' },
-    ],
-  };
+export const FOOTER_ADDRESS_INFO = {
+  title: 'Address',
+  links: [
+    { label: 'Gauteng Office', value: '377 Johannes Ramakhoase St, Office 0005, Jardown 1', icon: MapPinIcon },
+    { label: 'Limpopo Office', value: 'Mashau - Thondoni, Plot Number 1135, 0943', icon: MapPinIcon },
+   
+  ],
+};
+
+export const FOOTER_CONTACT_INFO = {
+  title: 'Address',
+  links: [
+    { label: 'Email Officer', value: 'info@muposecurity.co.za', icon: EnvelopeIcon },
+    { label: 'Gauteng Office #', value: '+27 12004 2004', icon: PhoneIcon },
+    { label: 'Limpopo Office #', value: ' +27 15 004 1587', icon: PhoneIcon },
+  ],
+};
   
-  export const SOCIALS = {
-    title: 'Social',
-    links: [
-      '/icons/facebook.svg',
-      '/icons/instagram.svg',
-      '/icons/twitter.svg',
-      '/icons/youtube.svg',
-      '/icons/wordpress.svg',
-    ],
-  };
+export const SOCIALS = {
+  title: '',
+  links: [
+    { name: 'Facebook', icon: GlobeAltIcon, url: 'https://www.facebook.com' },
+    { name: 'Instagram', icon: GlobeAltIcon, url: 'https://www.instagram.com' },
+    { name: 'Twitter', icon: GlobeAltIcon, url: 'https://www.twitter.com' },
+    { name: 'YouTube', icon: GlobeAltIcon, url: 'https://www.youtube.com' },
+    { name: 'WordPress', icon: GlobeAltIcon, url: 'https://www.wordpress.com' }, // Using GlobeAltIcon as a placeholder for WordPress
+  ],
+};
