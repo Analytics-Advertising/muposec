@@ -83,7 +83,7 @@ const NavBar = () => {
           />
         </div>
 
-        <ul className={`lg:hidden absolute top-[90px] right-0 bg-white w-full py-4 px-6 shadow-md transition-transform duration-300 ${menuOpen ? 'transform translate-x-0' : 'transform translate-x-full'}`}>
+        <ul className={`lg:hidden absolute top-[90px] right-0 bg-white w-full py-4 px-6 shadow-md transition-transform duration-300 transform ${menuOpen ? 'transform translate-x-0' : 'transform translate-x-full'}`}>
           {NAV_LINKS.map((link) => (
             <li key={link.key} className="mb-4">
               <Link href={link.href}  className="text-blue-100 text-lg font-medium hover:text-red-500" onClick={toggleMenu}>
@@ -91,6 +91,13 @@ const NavBar = () => {
               </Link>
             </li>
           ))}
+          <Button
+            type="button"
+            title="Get in touch!"
+            icon="/icons/phone.svg"
+            variant="btn_dark_green"
+            link="/contact-us"
+          />
         </ul>
 
         <ul className="hidden h-full mx-auto lg:flex gap-12">

@@ -19,7 +19,7 @@ const tabs = [
     content: <PSIRASection />,
   },
   {
-    name: "Fire-arm Training & Competency",
+    name: "Fire-Arm Training",
     content: <FirearmTrainingSection />,
   },
   {

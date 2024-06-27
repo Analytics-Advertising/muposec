@@ -21,7 +21,7 @@ const Tabs: React.FC<TabsProps> = ({ tabs }) => {
         {tabs.map((tab, index) => (
           <button
             key={index}
-            className={`py-2 text-blue-100 px-4 mt-8 font-semibold ${activeTab === index ? 'border-b-2 border-red-50 text-red-50' : ''} focus:outline-none`}
+            className={`py-2 text-blue-100 px-4 mt-8 sm:text-left sm:font-semibold ${activeTab === index ? 'border-b-2 border-red-50 text-red-50' : ''} focus:outline-none`}
             onClick={() => setActiveTab(index)}
           >
             {tab.name}

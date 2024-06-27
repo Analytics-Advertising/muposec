@@ -11,7 +11,7 @@ const HeroSection = () => {
           <h1 className="bold-40 lg:bold-64">
           Where Your Safety<span className="underline decoration-red-50"> Matters<span className='text-red-50'>!</span></span>
           </h1>
-          <p>Welcome to <b>Mupo Security,</b> your trusted partner in safeguarding your home, business, and loved ones. Our comprehensive security solutions are designed to provide you with peace of mind, knowing that your safety is our top priority. </p>
+          <p>Welcome to <b>Mupo Security & Training,</b> your trusted partner in safeguarding your home, business, and loved ones. Our comprehensive security & training solutions are designed to provide you with peace of mind, knowing that your safety is our top priority. </p>
           <div className="flex w-full flex-col gap-3 whitespace-nowrap xl:flex-row">
           <Button 
           type="button"

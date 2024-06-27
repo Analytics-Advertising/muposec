@@ -7,7 +7,7 @@ import {
 const FirearmTrainingSection = () => {
   const features = [
     {
-      name: "Handling, using, carrying out basic inspection and maintenance of a handgun, shotgun and rifle for safe business use.",
+      name: "Handling, using, carrying out basic inspection and maintenance of a handgun, shotgun and rifle for safe use, business/private use.",
       icon: LockClosedIcon,
     },
   ];
