@@ -86,7 +86,7 @@ export const FOOTER_ADDRESS_INFO = {
 };
 
 export const FOOTER_CONTACT_INFO = {
-  title: 'Contact ',
+  title: 'Contact Details',
   links: [
     { label: 'Email ', value: 'info@muposecurity.co.za', icon: EnvelopeIcon },
     { label: 'WhatsApp #', value: '+27 84 750 7013', icon: PhoneIcon },

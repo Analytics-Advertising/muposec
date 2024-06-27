@@ -31,8 +31,8 @@ const Footer = () => {
                         aria-hidden="true"
                       />
                       <div>
-                        <div>{contact.label}</div>
-                        <div>{contact.value}</div>
+                        <div>{contact.label} {" : "}
+                        {contact.value}</div>
                       </div>
                     </li>
                   ))}
