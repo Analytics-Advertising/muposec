@@ -6,7 +6,7 @@ const Services   = () => {
   return (
     <section className="flex-col padding-container flexCenter overflow-hidden bg-feature-bg bg-center bg-no-repeat">
       
-      <div className="max-container  relative w-full flex justify-end">
+      <div className="max-container relative w-full flex justify-end">
         
         <div className="flex flex-1 lg:min-h-[900px]">
           <Image

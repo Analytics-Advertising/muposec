@@ -1,19 +1,12 @@
 import React from "react";
 import Breadcrumb from "../components/Breadcrumb";
-import {
-  CloudArrowUpIcon,
-  LockClosedIcon,
-  ServerIcon,
-} from "@heroicons/react/20/solid";
+
 import {
   CloseProtectionFeatures,
   ElectronicSecurityFeatures,
-  IncidentResponseFeatures,
   InvestigationServicesFeatures,
   PhysicalSecurityFeatures,
-  SecurityConsultancyFeatures,
   SubElectronicSecurityFeatures,
-  SubPhysicalSecurityFeatures,
   features,
 } from "./constants";
 
@@ -52,7 +45,7 @@ const SecurityServices = () => {
             <img
               src="/security-services/securityguards.png"
               alt="Product screenshot"
-              className="w-[35rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 md:-ml-4 lg:-ml-0"
+              className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-2xl rounded-xl shadow-xl ring-1 ring-gray-400/10"
             />
           </div>
         </div>
