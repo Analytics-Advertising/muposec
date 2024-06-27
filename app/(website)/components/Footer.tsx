@@ -11,12 +11,12 @@ const Footer = () => {
     <footer className="flexCenter pb-5 bg-blue-100">
       <div className="padding-container max-container flex pt-10 w-full flex-col gap-14">
         <div className="flex flex-col items-start justify-center gap-10 md:flex-row">
-          <div className="flex flex-col items-start gap-4 mb-10 md:w-1/3">
+          <div className="flex flex-col items-start gap-4 md:w-1/3">
             <Link href="/">
               <Image src="/white-logo.png" alt="logo" width={150} height={100} />
             </Link>
             <p className="text-white">
-              Mupo Projex (Pty)Ltd is a trusted and reputable Security & Training service provider with extensive experience within the security industry. 
+              <b>Mupo Projex (Pty) Ltd</b> is a trusted and reputable Security & Training service provider with extensive experience within the security industry. 
             </p>
           </div>
 
@@ -61,7 +61,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border" />
+        <div className="border p-0 m-0" />
         <p className="regular-14 w-full text-center text-white">
           2024 Mupo Security | All rights reserved
         </p>
