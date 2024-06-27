@@ -86,9 +86,10 @@ export const FOOTER_ADDRESS_INFO = {
 };
 
 export const FOOTER_CONTACT_INFO = {
-  title: 'Address',
+  title: 'Contact ',
   links: [
-    { label: 'Email Officer', value: 'info@muposecurity.co.za', icon: EnvelopeIcon },
+    { label: 'Email ', value: 'info@muposecurity.co.za', icon: EnvelopeIcon },
+    { label: 'WhatsApp #', value: '+27 84 750 7013', icon: PhoneIcon },
     { label: 'Gauteng Office #', value: '+27 12004 2004', icon: PhoneIcon },
     { label: 'Limpopo Office #', value: ' +27 15 004 1587', icon: PhoneIcon },
   ],

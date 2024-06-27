@@ -4,17 +4,10 @@ import { CheckBadgeIcon } from "@heroicons/react/20/solid";
 
 export const Missionfeatures = [
     {
-      name: "To make business and residential communities safer and more secure places.",
+      name: "Is to offer top-notch, customized security services offerings that will protect your assets, employees, and customers while minimizing risks and vulnerabilities. With our highly trained staff, state-of-the-art technology, and proven track record, we are confident that we can ensure the safety and security of your organization.",
       icon: CheckBadgeIcon,
     },
-    {
-      name: "To increase community awareness of real security issues.",
-      icon: CheckBadgeIcon,
-    },
-    {
-      name: "To inform and educate our customers on the security solutions available, so that they can make the best choices to meet their needs and provide them with a complete peace of mind.",
-      icon: CheckBadgeIcon,
-    },
+   
     
   ];
 

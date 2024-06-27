@@ -9,18 +9,12 @@ export const GradeFeatures = [
       name: 'Patrol Officer',
       icon: ShieldCheckIcon,
     },
-    {
-      name: 'Close Protection',
-       icon: ShieldCheckIcon,
-    },
+   
     {
       name: 'Access Control Officer',
        icon: ShieldCheckIcon,
     },{
-      name: 'Asset Protection Officer Security first-line supervisor skills programmes must be completed.',
-       icon: ShieldCheckIcon,
-    },{
-      name: 'For Persons registered with PSIRA including directors as well as owners may be interested in this course',
+      name: 'Asset Protection Officer Security first-line supervisor skills programs must be completed.',
        icon: ShieldCheckIcon,
     },
   ]

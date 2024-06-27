@@ -4,7 +4,7 @@ import { CheckBadgeIcon } from "@heroicons/react/20/solid";
 
 export const Visionfeatures = [
     {
-      name: "To be a trusted integrated security company chosen by customers across all market segments we operate in.",
+      name: "To provide reliable and effective integrated security services to our clients, with the goal of protecting their assets, properties, and people.",
       icon: CheckBadgeIcon,
     },
     

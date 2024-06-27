@@ -23,10 +23,6 @@ const tabs = [
     content: <FirearmTrainingSection />,
   },
   {
-    name: "One-on-one Fire-arm Training",
-    content: <OneOnOneTrainingSection />,
-  },
-  {
     name: "SASSETA Accredited Training",
     content: <SASSETASection />,
   },
@@ -39,17 +35,18 @@ const TrainingServices = () => {
 
       <div className="overflow-hidden text-blue-100  bg-white max-container padding-container">
         <p>
-          Our training programs prepare individuals for careers in South African
-          Security Laws and strategy, teaching critical skills and resulting in
-          confident graduates ready to excel as elite officers. Our experienced
-          instructors and state-of-the-art facilities ensure that you receive
-          the highest quality instruction. Whether you are a beginner looking to
-          learn the basics or an experienced individual looking to improve your
-          skills, we have a program that is right for you.
+        Our training programs prepare individuals for careers in South African Security Laws and strategy, teaching critical skills and resulting in confident graduates ready to excel as elite officers. Our experienced instructors and facilities ensure that you receive the highest quality instruction. Whether you are a beginner looking to learn the basics or an experienced individual looking to improve your skills, we have a program that is right for you.
+
         </p>
 
         <Tabs tabs={tabs} />
+        <h2 className="text-base my-5 font-semibold leading-7 text-blue-100">
+              At Mupo Security & Training (S&T) we are committed to providing
+              the best possible security and training services to our customers.
+            </h2>
       </div>
+
+      
 
       <div className="border bg-gray-20"></div>
 

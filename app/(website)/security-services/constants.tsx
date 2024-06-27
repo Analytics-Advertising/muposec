@@ -2,48 +2,67 @@ import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/2
 
 export const features = [
     {
-      name: 'Physical Security',
+      name: 'Armed & Unarmed Guarding',
       icon: LockClosedIcon,
     },
     {
-      name: 'Electronic Security',
+      name: 'Armed & Unarmed Reaction Response',
       icon: LockClosedIcon,
     },
     {
-      name: 'Close Protection',
+      name: 'Residential',
        icon: LockClosedIcon,
     },
     {
-      name: 'Investigation Services',
+      name: 'Retail & Industrial',
        icon: LockClosedIcon,
     },{
-      name: 'Security Consultancy and Risk Management',
+      name: 'Special Events & Access Control',
        icon: LockClosedIcon,
     },{
-      name: 'Incident Response and Crisis Management',
+      name: 'Control of Asset Removal',
+       icon: LockClosedIcon,
+    },
+
+
+    {
+      name: 'Close Protection / VIP',
+      icon: LockClosedIcon,
+    },
+    {
+      name: 'National Key Point',
+       icon: LockClosedIcon,
+    },
+    {
+      name: 'Crowd Control & Surveillance',
        icon: LockClosedIcon,
     },
   ]
 
   export const PhysicalSecurityFeatures = [
     {
-      name: 'Security officers (armed and unarmed):',
-      description: 'We will provide a team of highly trained and licensed security officers to guard your premises 24/7.',
+      name: 'Security Assessment:',
+      description: 'We conduct a comprehensive and complete security audit of your premises to identify potential vulnerabilities and security risks.',
       icon: LockClosedIcon,
     },
     {
-      name: 'Access control:',
-      description: 'We will implement an access control system to prevent unauthorized entry and track movement within the facility.',
+      name: 'Customized Solutions:',
+      description: 'Based on the assessment, we design a security plan that is altered to your needs and budget.',
       icon: LockClosedIcon,
     },
     {
-      name: 'Security patrols:',
-      description: 'Our security officers will conduct regular patrols to ensure the safety of the premises and promptly address any issues.',
+      name: 'Quality Personnel:',
+      description: 'We employ only the best-qualified security professionals who undergo regular training to stay updated on industry best practices.',
        icon: LockClosedIcon,
     },
     {
-      name: 'Event Security:',
-      description: 'We provide event security services for all types of events, from small private parties to large public gatherings. Our team of security professionals will ensure that your event runs smoothly and safely.',
+      name: 'Technology Integration:',
+      description: 'We use the latest technology to enhance our services, including CCTV cameras, access control systems, and alarm monitoring.',
+       icon: LockClosedIcon,
+    },
+    {
+      name: 'Regular Reporting:',
+      description: 'You will receive detailed reports on security activities and incidents,  ensuring transparency and accountability.',
        icon: LockClosedIcon,
     },
   ]

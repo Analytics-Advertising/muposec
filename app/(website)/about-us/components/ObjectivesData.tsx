@@ -17,11 +17,7 @@ export const Objectivesfeatures = [
         icon: CheckBadgeIcon,
       },
       {
-        name: "Provide real-time monitoring and quick response to incidents.",
-        icon: CheckBadgeIcon,
-      },
-      {
-        name: "Promote a secure work environment.",
+        name: "Provide real-time monitoring and quick response to incidents promote a secure work environment.",
         icon: CheckBadgeIcon,
       },
             

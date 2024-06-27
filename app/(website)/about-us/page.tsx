@@ -19,30 +19,60 @@ const tabs = [
     name: "Objectives",
     content: <ObjectivesData />,
   },
-  {
-    name: "Our Philosophy",
-    content:
-      "At Mupo Security, safety always comes first. Our systematic approach to establishing and maintaining the highest standards of safety and security means you can focus on getting the job done without risk to your people, products, or property.",
-  },
+  
 ];
 
 const FeaturesOne = [
   {
-    name: "Retail & Industrial",
+    name: "Armed & Unarmed Guarding",
     icon: CheckBadgeIcon,
   },
   {
-    name: "Special Event",
+    name: "Armed & Unarmed Reaction Response",
     icon: CheckBadgeIcon,
   },
+  {
+    name: "Residential, Retail & Industrial",
+    icon: CheckBadgeIcon,
+  },
+  {
+    name: "Special Events & Access Control",
+    icon: CheckBadgeIcon,
+  },
+  
+];
+
+const FeaturesOne2 = [
   {
     name: "Control of Asset Removal",
     icon: CheckBadgeIcon,
   },
   {
-    name: "Armed & Unarmed Guard",
+    name: "Close Protection / VIP",
     icon: CheckBadgeIcon,
   },
+  {
+    name: "National Key Point",
+    icon: CheckBadgeIcon,
+  },
+  
+];
+
+const FeaturesOne3 = [
+  {
+    name: "Crowd Control & Surveillance",
+    icon: CheckBadgeIcon,
+  },
+  {
+    name: "PSiRA Grades Training",
+    icon: CheckBadgeIcon,
+  },
+  {
+    name: "Firearm & Competency Training",
+    icon: CheckBadgeIcon,
+  },
+ 
+  
 ];
 
 const Features2 = [
@@ -109,14 +139,23 @@ const AboutUs = () => {
 
       <div className="overflow-hidden bg-white max-container">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="lg:pr-8 lg:pt-4">
-            <p className="regular-16 text-gray-30">
-              <b>Mupo Projex (Pty)Ltd</b> T/A Mupo Security & Training (S&T) is
-              a trusted and reputable security services & Training services
-              provider with over five years of experience in the security
-              industry. Our team of experts, coupled with state-of-the-art
-              technology and industry best practices, will work diligently to
-              minimize risks and protect your assets.
+          <div className="lg:pr-8 lg:pt-4 text-blue-100">
+            <p>
+              <b>Mupo Projex (Pty)Ltd</b> is a trusted and reputable Security & Training service provider with extensive experience within the security industry. 
+              For your peace of mind, our team is made of security officers that are PSiRA compliant, with comprehensive insurance and all locally required licenses/certifications. 
+            </p>
+
+            <p className="mt-5">
+              In addition, for our training offering, Our Facilitators, Assessors and Moderators are PSIRA, PFTC and SASSETA accredited.
+            </p>
+
+            <p className="mt-5">
+              Our people are carefully screened and undergo rigorous training and continuous professional development, guaranteeing the very best in customer service. 
+            </p>
+
+            <p className="mt-5">
+            We remain committed to doing business by building partnerships with our customers to ensure enduring relationships. We are committed to providing the highest level of security services to ensure the safety and well-being of your organization. 
+
             </p>
 
             <div className="grid grid-cols-3 pb-5">
@@ -134,8 +173,8 @@ const AboutUs = () => {
                 ))}
               </dl>
 
-              {/* <dl className="mt-10 max-w-xl space-y-5 text-base leading-7 text-gray-600 lg:max-w-none">
-                {features2.map((feature) => (
+              <dl className="mt-10 max-w-xl space-y-5 text-base leading-7 text-gray-600 lg:max-w-none">
+                {FeaturesOne2.map((feature) => (
                   <div key={feature.name} className="relative pl-9">
                     <dt className="inline font-semibold text-gray-900">
                       <feature.icon
@@ -146,10 +185,10 @@ const AboutUs = () => {
                     </dt>
                   </div>
                 ))}
-              </dl> */}
+              </dl>
 
-              {/* <dl className="mt-10 max-w-xl space-y-5 text-base leading-7 text-gray-600 lg:max-w-none">
-                {features3.map((feature) => (
+              <dl className="mt-10 max-w-xl space-y-5 text-base leading-7 text-gray-600 lg:max-w-none">
+                {FeaturesOne3.map((feature) => (
                   <div key={feature.name} className="relative pl-9">
                     <dt className="inline font-semibold text-gray-900">
                       <feature.icon
@@ -160,41 +199,10 @@ const AboutUs = () => {
                     </dt>
                   </div>
                 ))}
-              </dl> */}
+              </dl>
             </div>
-            <p className="regular-16 text-gray-30">
-              Our people are carefully screened and undergo rigorous training
-              and continuous professional development, guaranteeing the very
-              best in customer service. For your peace of mind, we carry
-              comprehensive insurance, and all locally required licenses and
-              certifications are up to date. We remain committed to doing
-              business by building partnerships with our customers to ensure
-              enduring relationships. We are committed to providing the highest
-              level of security services to ensure the safety and well-being of
-              your organization. We look forward to partnering with you to
-              create a secure environment for your business operations.
-              <br />
-            </p>
-            <div className="pt-5">
-              {" "}
-              <p className="regular-16 text-gray-30">
-                We have extensive experience in providing security services and
-                training to a range of clients, including:
-              </p>
-              {/* <dl className="mt-10 max-w-xl space-y-5 text-base leading-7 text-gray-600 lg:max-w-none">
-                {features4.map((feature) => (
-                  <div key={feature.name} className="relative pl-9">
-                    <dt className="inline font-semibold text-gray-900">
-                      <feature.icon
-                        className="absolute left-1 top-1 h-5 w-5 text-red-50"
-                        aria-hidden="true"
-                      />
-                      <span className="text-blue-100">{feature.name}</span>
-                    </dt>
-                  </div>
-                ))}
-              </dl> */}
-            </div>
+            
+           
           </div>
 
           <p></p>
