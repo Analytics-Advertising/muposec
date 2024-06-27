@@ -93,10 +93,10 @@ const NavBar = () => {
           ))}
         </ul>
 
-        <ul className="hidden lg:flex gap-12">
+        <ul className="hidden h-full mx-auto lg:flex gap-12">
           {NAV_LINKS.map((link) => (
             <li key={link.key}>
-              <Link href={link.href} className="text-blue-100 hover:font-semibold hover:text-red-500">
+              <Link href={link.href} className="text-blue-100 flexCenter hover:font-semibold hover:text-red-500">
                   {link.label}
               </Link>
             </li>
