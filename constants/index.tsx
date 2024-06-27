@@ -7,9 +7,7 @@ export const NAV_LINKS = [
     { href: '/about-us', key: 'about-us', label: 'About Us' },
     { href: '/security-services', key: 'security-services', label: 'Security Services' },
     { href: '/training-services', key: 'training-services', label: 'Training Services' },
-    { href: '/training-application', key: 'training-application', label: 'Training Application ' },
-    // { href: '/training-enquiries', key: 'training-enquiries', label: 'Training Enquiries' },
-
+    { href: '/training-application', key: 'training-application', label: 'Training Application'}
   ];
 
 

@@ -1,10 +1,23 @@
+"use client"
+import { SetStateAction, useState } from 'react';
 import Image from "next/image";
-import { FaBeer } from "@react-icons/all-files/fa/FaBeer";
-import { FaLocationArrow } from "@react-icons/all-files/fa/FaLocationArrow";
-import { FaPhone } from "@react-icons/all-files/fa/FaPhone";
-import { FaEnvelope } from "@react-icons/all-files/fa/FaEnvelope";
+
+import {
+  MapPinIcon,
+  PhoneIcon,
+  EnvelopeIcon,
+} from '@heroicons/react/20/solid';
+
 
 const CTASection = () => {
+
+
+  const [selectedOption, setSelectedOption] = useState('');
+
+  const handleOptionChange = (event: { target: { value: SetStateAction<string>; }; }) => {
+    setSelectedOption(event.target.value);
+  }
+
   return (
     <section className="max-container padding-container flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row">
       <div className="hero-map" />
@@ -43,39 +56,38 @@ const CTASection = () => {
           </p>
         </div>
 
-        <div className="">
+        <div>
+    <div className="flex items-center gap-2">
+      <MapPinIcon className="h-6 w-6 text-red-50" />
+      <p className="text-blue-100 my-4">
+        Office 0005, Jardown 1, 377 Johannes Ramokhoase St, Pretoria, 0002
+      </p>
+    </div>
 
-          <div className="grid grid-cols-2">
-            
-            <FaLocationArrow />
-            <p className="text-blue-100 my-4">
-              Office 0005, Jardown 1, 377 Johannes Ramokhoase St, Pretoria, 0002
-            </p>
-            
-          </div>
+    <div className="flex items-center gap-2">
+      <MapPinIcon className="h-6 w-6 text-red-50" />
+      <p className="text-blue-100 my-4">
+        Ha Masahu, Thondoni. Plot Number 1135, Limpopo Province
+      </p>
+    </div>
 
-          <div className="row">
-            <FaLocationArrow />
-            <p className="text-blue-100 my-4">
-              Ha Masahu ,Thondoni. Plot Number 1135, Limpopo Province
-            </p>
-          </div>
+    <div className="flex items-center gap-2">
+      <PhoneIcon className="h-6 w-6 text-red-50" />
+      <p className="text-blue-100 my-4">
+        (+27) 12 004 2004 or (+27) 81 894 9868
+      </p>
+    </div>
 
-          <div className="row">
-            <FaPhone />{" "}
-            <p className="text-blue-100 my-4">
-              (+27) 12 004 2004 or (+27) 81 894 9868
-            </p>
-          </div>
-          <div className="row">
-            <FaEnvelope />
-            <p className="text-blue-100 my-4">info@muposecurity.co.za</p>
-          </div>
-          <div className="row">
-            <FaEnvelope />
-            <p className="text-blue-100 my-4">training@muposecurity.co.za</p>
-          </div>
-        </div>
+    <div className="flex items-center gap-2">
+      <EnvelopeIcon className="h-6 w-6 text-red-50" />
+      <p className="text-blue-100 my-4">info@muposecurity.co.za</p>
+    </div>
+
+    <div className="flex items-center gap-2">
+      <EnvelopeIcon className="h-6 w-6 text-red-50" />
+      <p className="text-blue-100 my-4">training@muposecurity.co.za</p>
+    </div>
+  </div>
       </div>
 
       <div className="relative flex flex-1 items-start ">
@@ -126,26 +138,58 @@ const CTASection = () => {
               </div>
 
               <div>
-                <label className="block mb-2 text-sm font-medium text-blue-100">
-                  Select enquiry type
-                </label>
-                <select
-                  id="countries"
-                  className="border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 0"
-                >
-                  <option selected>Select enquiry type</option>
-                  <option value="Security Services Enquiry">
-                    Security Services Enquiry
-                  </option>
-                  <option value="PSIRA Training Enquiry">
-                    PSIRA Training Enquiry
-                  </option>
-                  <option value="Firearm & Competency Training Enquiry">
-                    Firearm & Competency Training Enquiry
-                  </option>
-                  <option value="General Enquiry">General Enquiry</option>
-                </select>
-              </div>
+      <fieldset>
+        <legend className="block mb-2 text-sm font-medium text-blue-100">
+          Select enquiry type
+        </legend>
+        <div className="flex flex-col space-y-2">
+          <label className="inline-flex items-center">
+            <input
+              type="radio"
+              className="form-radio h-4 w-4 text-blue-500"
+              name="enquiryType"
+              value="Security Services Enquiry"
+              checked={selectedOption === 'Security Services Enquiry'}
+              onChange={handleOptionChange}
+            />
+            <span className="ml-2">Security Services Enquiry</span>
+          </label>
+          <label className="inline-flex items-center">
+            <input
+              type="radio"
+              className="form-radio h-4 w-4 text-blue-500"
+              name="enquiryType"
+              value="PSIRA Training Enquiry"
+              checked={selectedOption === 'PSIRA Training Enquiry'}
+              onChange={handleOptionChange}
+            />
+            <span className="ml-2">PSIRA Training Enquiry</span>
+          </label>
+          <label className="inline-flex items-center">
+            <input
+              type="radio"
+              className="form-radio h-4 w-4 text-blue-500"
+              name="enquiryType"
+              value="Firearm & Competency Training Enquiry"
+              checked={selectedOption === 'Firearm & Competency Training Enquiry'}
+              onChange={handleOptionChange}
+            />
+            <span className="ml-2">Firearm & Competency Training Enquiry</span>
+          </label>
+          <label className="inline-flex items-center">
+            <input
+              type="radio"
+              className="form-radio h-4 w-4 text-blue-500"
+              name="enquiryType"
+              value="General Enquiry"
+              checked={selectedOption === 'General Enquiry'}
+              onChange={handleOptionChange}
+            />
+            <span className="ml-2">General Enquiry</span>
+          </label>
+        </div>
+      </fieldset>
+    </div>
               <div className="sm:col-span-2">
                 <label className="block mb-2 text-sm font-medium text-blue-100">
                   Your message
