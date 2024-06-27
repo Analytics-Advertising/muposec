@@ -83,7 +83,7 @@ const NavBar = () => {
           />
         </div>
 
-        <ul className={`lg:hidden absolute top-[90px] right-0 bg-white w-full py-4 px-6 shadow-md transition-transform duration-300 transform ${menuOpen ? '0' :'top-[1000px]' }`}>
+        <ul className={`lg:hidden absolute top-[90px] right-0 bg-white w-full py-4 px-6 shadow-md transition-transform duration-300 ${menuOpen ? 'transform translate-x-0' : 'transform translate-x-full'}`}>
           {NAV_LINKS.map((link) => (
             <li key={link.key} className="mb-4">
               <Link href={link.href}  className="text-blue-100 text-lg font-medium hover:text-red-500" onClick={toggleMenu}>
