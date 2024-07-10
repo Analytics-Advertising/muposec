@@ -83,13 +83,16 @@ const NavBar = () => {
           />
         </div>
 
-        <ul className={`lg:hidden absolute top-[90px] right-0 bg-white w-full py-4 px-6 shadow-md transition-transform duration-300 transform ${menuOpen ? 'transform translate-x-0' : 'transform translate-x-full'}`}>
+        {menuOpen && (
+        <ul className="lg:hidden absolute top-[90px] right-0 bg-white w-full py-4 px-6 shadow-md transition-transform duration-300">
+
           {NAV_LINKS.map((link) => (
             <li key={link.key} className="mb-4">
               <Link href={link.href}  className="text-blue-100 text-lg font-medium hover:text-red-500" onClick={toggleMenu}>
                   {link.label}
               </Link>
             </li>
+
           ))}
           <Button
             type="button"
@@ -99,6 +102,9 @@ const NavBar = () => {
             link="/contact-us"
           />
         </ul>
+
+)}
+
 
         <ul className="hidden h-full mx-auto lg:flex gap-12">
           {NAV_LINKS.map((link) => (
